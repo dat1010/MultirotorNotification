@@ -1,0 +1,7 @@
+{
+  "name": "MultirotorNotification",
+  "private": true,
+  "dependencies": {
+    "nodejs": "0.0.0"
+  }
+}
