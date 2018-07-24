@@ -1,12 +1,26 @@
-<h1>Enter email to sign up</h1>
 <%= form_for(@users) do |f| %>
 
-  <div class="field">
-    <%= f.label :email %>
-    <%= f.text_field :email %>
-  </div>
+  <div class="form-group">
+    <div class="row">
+      <div class="col">
+        <div class="jumbotron">
+          <h2>MultirotorQnA</h2>
+          <p class="lead">Ask and you will receive.<br/>This is a drone QnA forum where as a community we can ask and answer each others questions.</p>
+        </div>
+      </div>
+    </div>
 
-  <div class="actions">
-    <%= f.submit %>
+<h3>Enter email to sign up</h3>
+    <div class="row">
+    <div class="field">
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+    </div>
+
+    <%= button_tag( :class => "btn btn-primary") do %>
+  	Submit 
+    <% end %>	
+    </div>
+
   </div>
 <% end %>
