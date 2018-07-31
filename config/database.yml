@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: MultirotorNotification_production
-  username: MultirotorNotification
-  password: <%= ENV['MULTIROTORNOTIFICATION_DATABASE_PASSWORD'] %>
+  username: davidtanner
+  password: ENV["POSTGRES_PASSWORD"] 

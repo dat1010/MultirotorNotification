@@ -5,6 +5,8 @@ class UsersController < ApplicationController
 
   def create
     @users = User.new(params.require(:user).permit(:email))
+    #TODO Add email format validation
+    #validates :email, format: { with: URI::MailTo::EMAIL_REGEXP } 
     respond_to do |format|
       if @users.save
         format.html { redirect_to :controller => 'pages', :action => 'Home' , notice: 'Your Email was submitted.'}
